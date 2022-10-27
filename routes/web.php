@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,7 +35,3 @@ Route::prefix('admin/')->group(function () {
 /**
  * Admin Auth Routes <-
  */
-
-Route::get('admin/dashboard', function () {
-    return view('backend.pages.dashboard');
-});

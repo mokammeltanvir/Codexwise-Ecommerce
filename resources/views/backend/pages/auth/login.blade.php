@@ -5,72 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Admin Login</title>
+    @include('frontend.layouts.inc.style')
 </head>
 
 <body>
-    <section class="vh-100" style="background-color: #619a7e;">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col col-xl-10">
-                    <div class="card" style="border-radius: 1rem;">
-                        <div class="row g-0">
-                            <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
-                                    alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
-                            </div>
-                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                                <div class="card-body p-4 p-lg-5 text-black">
+    <!-- bg shape area start -->
+    <div class="bg-shape top0">
+        <img src="{{ asset('assets/frontend') }}/img/shape/shape-1.png" alt="">
+    </div>
+    <!-- bg shape area end -->
 
-                                    <form action="{{ route('admin.login') }}" method="POST">
-                                        @csrf
-                                        <div class="d-flex align-items-center mb-3 pb-1">
-                                            <span class="h1 fw-bold mx-auto">Login Form</span>
-                                        </div>
+    <!-- sign in area start -->
+    <section class="signup__area po-rel-z1 pt-100 pb-145">
+        <div class="sign__shape">
+            <img class="man-1" src="{{ asset('assets/frontend') }}/img/icon/sign/man-1.png" alt="">
+            <img class="man-2" src="{{ asset('assets/frontend') }}/img/icon/sign/man-2.png" alt="">
+            <img class="circle" src="{{ asset('assets/frontend') }}/img/icon/sign/circle.png" alt="">
+            <img class="zigzag" src="{{ asset('assets/frontend') }}/img/icon/sign/zigzag.png" alt="">
+            <img class="dot" src="{{ asset('assets/frontend') }}/img/icon/sign/dot.png" alt="">
+            <img class="bg" src="{{ asset('assets/frontend') }}/img/icon/sign/sign-up.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2">
+                    <div class="page__title-wrapper text-center mb-55">
+                        <h2 class="page__title-2">Sign in to <br> Admin Dashboard.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                    <div class="sign__wrapper white-bg">
+                        <div class="sign__form">
+                            <form action="{{ route('admin.login') }}" method="POST">
+                                @csrf
+                                <div class="sign__input-wrapper mb-25">
+                                    <h5>Admin Email</h5>
+                                    <div class="sign__input">
+                                        <input type="email" id="email-address" placeholder="Admin e-mail address"
+                                            class="form-control @error('email') is-invalid @enderror" name="email">
+                                        <i class="fal fa-envelope"></i>
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
 
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label" for="email-address">Email address</label>
-                                            <input type="email" id="email-address"
-                                                class="form-control @error('email') is-invalid @enderror"
-                                                name="email" />
-                                            @error('email')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
+                                <div class="sign__input-wrapper mb-10">
+                                    <h5>Password</h5>
+                                    <div class="sign__input">
+                                        <input type="password" id="password" placeholder="Password"
+                                            class="form-control @error('password') is-invalid @enderror"
+                                            name="password">
+                                        <i class="fal fa-lock"></i>
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="sign__action d-sm-flex justify-content-between mb-30">
 
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label" for="password">Password</label>
-                                            <input type="password" id="password"
-                                                class="form-control @error('password') is-invalid @enderror"
-                                                name="password" />
-                                            @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
-
-                                        <div class="pt-1 mb-4 d-flex justify-content-center">
-                                            <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
-                                        </div>
-
-                                    </form>
 
                                 </div>
-                            </div>
+                                <button type="submit" class="m-btn m-btn-4 w-100"> <span></span> Login</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-    </script>
+    <!-- sign in area end -->
+    </div>
+
+    @include('frontend.layouts.inc.script')
 </body>
 
 </html>
