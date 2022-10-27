@@ -1,7 +1,7 @@
                 <div class="menu-container flex-grow-1">
                     <ul id="menu" class="menu">
                         <li>
-                            <a href="Dashboard.html">
+                            <a href="{{ route('admin.dashboard') }}">
                                 <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
                                 <span class="label">Dashboard</span>
                             </a>
@@ -14,12 +14,30 @@
                             <ul id="products">
                                 <li>
                                     <a href="Products.List.html">
-                                        <span class="label">List</span>
+                                        <span class="label">Product List</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="Products.Detail.html">
-                                        <span class="label">Detail</span>
+                                        <span class="label">Product Detail</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#categories" data-href="">
+                                <i data-cs-icon="cupcake" class="icon" data-cs-size="18"></i>
+                                <span class="label">Categories</span>
+                            </a>
+                            <ul id="categories">
+                                <li>
+                                    <a href="{{ route('category.index') }}">
+                                        <span class="label">Categories</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('category.create') }}">
+                                        <span class="label">Add Category</span>
                                     </a>
                                 </li>
                             </ul>
@@ -32,12 +50,12 @@
                             <ul id="orders">
                                 <li>
                                     <a href="Orders.List.html">
-                                        <span class="label">List</span>
+                                        <span class="label">Order List</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="Orders.Detail.html">
-                                        <span class="label">Detail</span>
+                                        <span class="label">Order Detail</span>
                                     </a>
                                 </li>
                             </ul>
@@ -50,12 +68,12 @@
                             <ul id="customers">
                                 <li>
                                     <a href="Customers.List.html">
-                                        <span class="label">List</span>
+                                        <span class="label">Customer List</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="Customers.Detail.html">
-                                        <span class="label">Detail</span>
+                                        <span class="label">Customer Detail</span>
                                     </a>
                                 </li>
                             </ul>

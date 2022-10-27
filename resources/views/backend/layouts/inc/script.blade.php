@@ -15,3 +15,12 @@
 <script src="{{ asset('assets/backend') }}/js/base/settings.js"></script>
 <script src="{{ asset('assets/backend') }}/js/base/init.js"></script>
 <!-- Template Base Scripts End -->
+
+<!--Toastr link start-->
+<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+{!! Toastr::message() !!}
+<!--Toastr link end-->
+
+<!-- Page Specific Scripts Start -->
+@stack('admin_script')
+<!-- Page Specific Scripts End -->

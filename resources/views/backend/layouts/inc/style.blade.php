@@ -48,5 +48,13 @@
 <link rel="stylesheet" href="{{ asset('assets/backend') }}/css/styles.css" />
 <!-- Template Base Styles End -->
 
+<!--Toastr link start-->
+<link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+<!--Toastr link end-->
+
 <link rel="stylesheet" href="{{ asset('assets/backend') }}/css/main.css" />
 <script src="{{ asset('assets/backend') }}/js/base/loader.js"></script>
+<!-- Template Base Styles End -->
+
+
+@stack('admin_style')

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,8 +31,12 @@ Route::prefix('admin/')->group(function () {
     Route::middleware(['auth'])->group(function () {
         Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
     });
-});
 
+    /**
+     * Resource Controller Routes ->
+     */
+    Route::resource('category', CategoryController::class);
+});
 /**
  * Admin Auth Routes <-
  */

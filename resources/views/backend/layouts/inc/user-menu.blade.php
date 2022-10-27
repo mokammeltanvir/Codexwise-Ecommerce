@@ -4,7 +4,7 @@
                         aria-expanded="false">
                         <img class="profile" alt="profile"
                             src="{{ asset('assets/backend') }}/img/profile/profile-11.jpg" />
-                        <div class="name">Zayn Hartley</div>
+                        <div class="name">Super Admin</div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end user-menu wide">
 
