@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="{{ asset('assets/frontend') }}/img/logo/logo.png" alt="logo" />
                         </a>
                     </div>

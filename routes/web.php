@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\TestimonialController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +37,8 @@ Route::prefix('admin/')->group(function () {
      * Resource Controller Routes ->
      */
     Route::resource('category', CategoryController::class);
+    Route::resource('testimonial', TestimonialController::class);
+
 });
 /**
  * Admin Auth Routes <-
