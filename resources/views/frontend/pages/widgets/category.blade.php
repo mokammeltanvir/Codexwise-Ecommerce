@@ -12,79 +12,30 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6">
-                        <div class="category__item transition-3 text-center white-bg mb-30 wow fadeInUp"
-                            data-wow-delay=".3s">
-                            <div class="category__icon mb-25">
-                                <a href="#"><img src="{{ asset('assets/frontend') }}/img/icon/catagory/cat-1.png"
-                                        alt="" /></a>
-                            </div>
-                            <div class="category__content">
-                                <h3 class="category__title">
-                                    <a href="product.html">WordPress Themes</a>
-                                </h3>
-                                <a href="product.html" class="link-btn">
-                                    <i class="far fa-long-arrow-right"></i>
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6">
-                        <div class="category__item transition-3 text-center white-bg mb-30 wow fadeInUp"
-                            data-wow-delay=".5s">
-                            <div class="category__icon mb-25">
-                                <a href="#"><img src="{{ asset('assets/frontend') }}/img/icon/catagory/cat-2.png"
-                                        alt="" /></a>
-                            </div>
-                            <div class="category__content">
-                                <h3 class="category__title">
-                                    <a href="product.html">Site Templates</a>
-                                </h3>
-                                <a href="product.html" class="link-btn">
-                                    <i class="far fa-long-arrow-right"></i>
-                                    Learn More
-                                </a>
+                    @foreach ($categories as $category)
+                        <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6">
+                            <div class="category__item transition-3 text-center white-bg mb-30 wow fadeInUp"
+                                data-wow-delay=".3s">
+                                <div class="category__icon mb-25">
+                                    <a href="#"><img
+                                            src="{{ asset('uploads/category') }}/{{ $category->category_image }}"
+                                            alt="" /></a>
+                                </div>
+                                <div class="category__content">
+                                    <h3 class="category__title">
+                                        <a href="product.html">{{ $category->title }}</a>
+                                    </h3>
+                                    <a href="product.html" class="link-btn">
+                                        <i class="far fa-long-arrow-right"></i>
+                                        Learn More
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6">
-                        <div class="category__item transition-3 text-center white-bg mb-30 wow fadeInUp"
-                            data-wow-delay=".7s">
-                            <div class="category__icon mb-25">
-                                <a href="#"><img src="{{ asset('assets/frontend') }}/img/icon/catagory/cat-3.png"
-                                        alt="" /></a>
-                            </div>
-                            <div class="category__content">
-                                <h3 class="category__title">
-                                    <a href="product.html">UI Templates</a>
-                                </h3>
-                                <a href="product.html" class="link-btn">
-                                    <i class="far fa-long-arrow-right"></i>
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6">
-                        <div class="category__item transition-3 text-center white-bg mb-30 wow fadeInUp"
-                            data-wow-delay=".9s">
-                            <div class="category__icon mb-25">
-                                <a href="#"><img src="{{ asset('assets/frontend') }}/img/icon/catagory/cat-4.png"
-                                        alt="" /></a>
-                            </div>
-                            <div class="category__content">
-                                <h3 class="category__title">
-                                    <a href="product.html">Digital Marketing</a>
-                                </h3>
-                                <a href="product.html" class="link-btn">
-                                    <i class="far fa-long-arrow-right"></i>
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
+
                 <div class="row">
                     <div class="col-xxl-12">
                         <div class="category__more mt-30 text-center">

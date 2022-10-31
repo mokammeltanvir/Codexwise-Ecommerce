@@ -21,24 +21,12 @@
 
     <!-- subscribe area start -->
     @include('frontend.pages.widgets.subscribe')
-
     <!-- subscribe area end -->
 
     <!-- product area start -->
     @include('frontend.pages.widgets.product')
 
     <!-- product area end -->
-
-    <!-- cta area start -->
-    @include('frontend.pages.widgets.cta')
-
-    <!-- cta area end -->
-
-    <!-- brand area start -->
-    @include('frontend.pages.widgets.brand')
-
-    <!-- brand area end -->
-
 
     <!-- testimonial area start -->
     @include('frontend.pages.widgets.testimonial')

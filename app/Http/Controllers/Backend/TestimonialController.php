@@ -20,7 +20,7 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::latest('id')->select(['id', 'client_name', 'client_name_slug', 'client_designation', 'client_testimonial', 'client_image', 'updated_at'])->paginate(5);
+        $testimonials = Testimonial::latest('id')->select(['id', 'client_name', 'client_name_slug', 'client_designation', 'client_testimonial', 'client_image', 'updated_at'])->paginate(10);
         return view('backend.pages.testimonial.index', compact('testimonials'));
     }
 
