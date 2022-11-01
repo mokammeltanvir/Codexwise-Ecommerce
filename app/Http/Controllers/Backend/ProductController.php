@@ -162,7 +162,7 @@ class ProductController extends Controller
             $uploaded_photo = $request->file('product_image');
             $new_photo_name = $product->id . '.' . $uploaded_photo->getClientOriginalExtension();
             $new_photo_location = $photo_location . $new_photo_name;
-            Image::make($uploaded_photo)->resize(600, 600)->save(base_path($new_photo_location), 40);
+            Image::make($uploaded_photo)->resize(350, 250)->save(base_path($new_photo_location), 40);
             $check = $product->update([
                 'product_image' => $new_photo_name,
             ]);
