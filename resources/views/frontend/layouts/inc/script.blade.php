@@ -13,3 +13,4 @@
 <script src="{{ asset('assets/frontend') }}/js/wow.min.js"></script>
 <script src="{{ asset('assets/frontend') }}/js/imagesloaded.pkgd.min.js"></script>
 <script src="{{ asset('assets/frontend') }}/js/main.js"></script>
+<script src="{{ asset('assets/frontend') }}/js/cart.js"></script>

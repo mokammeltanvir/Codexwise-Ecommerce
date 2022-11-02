@@ -14,11 +14,11 @@
 11. Product Slider 2 Js
 12. Product Slider 3 Js
 13. Product Slider 4 Js
-14. Sale Slider Js 
-15. Sale Slider 2 Js 
+14. Sale Slider Js
+15. Sale Slider 2 Js
 16. Client Slider Js
 17. Blog Slider Js
-18. Product Offer SLider Js 
+18. Product Offer SLider Js
 19. Masonary Js
 20. WoW Js
 21. Cart Plus Minus Js
@@ -59,18 +59,36 @@
 
 	////////////////////////////////////////////////////
     // 02. Cart Toggle Js
-	$(".cart-toggle-btn").on("click", function () {
-		$(".cartmini__wrapper").addClass("opened");
-		$(".body-overlay").addClass("opened");
-	});
-	$(".cartmini__close-btn").on("click", function () {
-		$(".cartmini__wrapper").removeClass("opened");
-		$(".body-overlay").removeClass("opened");
-	});
-	$(".body-overlay").on("click", function () {
-		$(".cartmini__wrapper").removeClass("opened");
-		$(".sidebar__area").removeClass("sidebar-opened");
-		$(".body-overlay").removeClass("opened");
+	// $(".cart-toggle-btn").on("click", function () {
+	// 	$(".cartmini__wrapper").addClass("opened");
+	// 	$(".body-overlay").addClass("opened");
+	// });
+	// $(".cartmini__close-btn").on("click", function () {
+	// 	$(".cartmini__wrapper").removeClass("opened");
+	// 	$(".body-overlay").removeClass("opened");
+	// });
+	// $(".body-overlay").on("click", function () {
+	// 	$(".cartmini__wrapper").removeClass("opened");
+	// 	$(".sidebar__area").removeClass("sidebar-opened");
+	// 	$(".body-overlay").removeClass("opened");
+	// });
+
+    // 21. Cart Plus Minus Js
+	$(".cart-plus-minus").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
+	$(".qtybutton").on("click", function () {
+		var $button = $(this);
+		var oldValue = $button.parent().find("input").val();
+		if ($button.text() == "+") {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			// Don't allow decrementing below zero
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = 0;
+			}
+		}
+		$button.parent().find("input").val(newVal);
 	});
 
 
@@ -93,7 +111,7 @@
 		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
 	});
 
-	
+
 
 
 	////////////////////////////////////////////////////
@@ -243,7 +261,7 @@
 			}
 		}
 	});
-	
+
 	////////////////////////////////////////////////////
     // 00.brand__slider Slider Js ( Home 1 )
 	$('.testimonial__slider').owlCarousel({
@@ -277,7 +295,7 @@
 			}
 		}
 	});
-	
+
 	////////////////////////////////////////////////////
     // 00.brand__slider Slider Js ( Home 1 )
 	$('.testimonial__slider-2').owlCarousel({
@@ -316,7 +334,7 @@
 
 
 
-	
+
 
 	////////////////////////////////////////////////////
     // 19. Masonary Js
@@ -401,13 +419,13 @@
 		delay: 10,
 		time: 1000
 	});
-	
+
 
 	if ($('.scene').length > 0 ) {
 		$('.scene').parallax({
 			scalarX: 10.0,
 			scalarY: 15.0,
-		}); 
+		});
 	};
 
 })(jQuery);

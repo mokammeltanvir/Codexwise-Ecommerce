@@ -23,4 +23,25 @@ class HomeController extends Controller
 
         return view('frontend.pages.home', compact('testimonials', 'categories', 'products'));
     }
+
+    public function shopPage()
+    {
+        // $allproducts = Product::where('is_active', 1)
+        //     ->latest('id')->select(['id', 'name', 'slug', 'product_price',
+        //     'product_stock', 'product_rating', 'product_image'])->paginate(8);
+
+        // $categories = Category::where('is_active', 1)
+        //     ->with('products')->limit(6)->select(['id', 'title', 'slug'])->get();
+        $categories_left = Category::where('is_active', 1)->latest('id')->limit(6)->select(['id', 'title', 'category_image', 'slug'])->get();
+        $allproducts = Product::where('is_active', 1)
+            ->latest('id')->select(['id', 'name', 'slug', 'product_price',
+            'product_stock', 'product_rating', 'product_image'])->paginate(6);
+
+        return view('frontend.pages.shop', compact('categories_left', 'allproducts'));
+    }
+
+    public function productDetails($product_slug)
+    {
+        return view('frontend.pages.single-product');
+    }
 }

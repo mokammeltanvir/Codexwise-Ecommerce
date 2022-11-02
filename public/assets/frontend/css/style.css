@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Outstock - Clean, Minimal eCommerce HTML5 Template 
+    Theme Name: Outstock - Clean, Minimal eCommerce HTML5 Template
     Author: Basic Theme
     Support: mdsalim400@gmail.com
-    Description:  Clean, Minimal eCommerce HTML5 Template 
+    Description:  Clean, Minimal eCommerce HTML5 Template
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -12,29 +12,29 @@
     CSS INDEX
     ===================
 
-    01. Theme default CSS	
-    02. Header CSS	
-    03. Hero CSS	
-    04. Category CSS	
-    05. Trending CSS	
-    06. Subscribe CSS	
-    07. Product CSS	
-    08. Cta CSS	
-    09. Brand CSS	
-    10. Testimonial CSS	
-    11. Banner CSS	
-    12. About CSS	
-    13. Community CSS	
-    14. Support CSS	
-    15. Faq CSS	
-    16. Blog CSS	
-    17. Documentation CSS	
-    18. Pricing CSS	
-    19. Sign CSS	
-    20. Contact CSS	
-    21. Featured CSS	
-    22. services CSS	
-    00. Footer CSS	
+    01. Theme default CSS
+    02. Header CSS
+    03. Hero CSS
+    04. Category CSS
+    05. Trending CSS
+    06. Subscribe CSS
+    07. Product CSS
+    08. Cta CSS
+    09. Brand CSS
+    10. Testimonial CSS
+    11. Banner CSS
+    12. About CSS
+    13. Community CSS
+    14. Support CSS
+    15. Faq CSS
+    16. Blog CSS
+    17. Documentation CSS
+    18. Pricing CSS
+    19. Sign CSS
+    20. Contact CSS
+    21. Featured CSS
+    22. services CSS
+    00. Footer CSS
 
 
 
@@ -7041,3 +7041,175 @@ div.product_new_item a {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* 14. cart page
+-------------------------------------------------------------- */
+.cart-img {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.cart-table .table td,
+.cart-table .table th {
+    padding: 20px 10px;
+    vertical-align: middle;
+}
+
+.cart-area .sub-btn {
+    padding: 28px 48px;
+}
+
+.coupon-code-area input {
+    height: 62px;
+    border: 1px solid #dee2e6;
+}
+
+.total-price-area h2 {
+    font-size: 22px;
+}
+
+.p-name {
+    font-size: 14px;
+}
+
+/* 16. checkout page
+-------------------------------------------------------------- */
+.coupon-content,
+.checkout-content,
+#ship-box-info,
+#cbox-account-info {
+    display: none;
+}
+
+#login,
+#couponshow {
+    cursor: pointer;
+}
+
+.coupon-accordion h6 {
+    background: #f9f9f9;
+    border-top: 3px solid #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.coupon-accordion h6::before {
+    content: "\f07b";
+    left: 30px;
+    top: 17px;
+    position: absolute;
+    color: #000000;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+}
+
+.coupon-area span,
+.checkout-area span,
+.checkout-area label {
+    font-size: 16px;
+    color: #222;
+    line-height: 1.5;
+}
+
+.coupon-area span:hover {
+    color: #006699;
+    text-decoration: underline;
+}
+
+.checkout-area label {
+    display: block;
+}
+
+.checkbox-form .checkout-area label span,
+.lost-password a {
+    color: #006699;
+}
+
+.coupon-area input,
+.checkout-area input,
+.country-select select {
+    height: 45px;
+    margin: 0 0 14px;
+    padding: 0 0 0 10px;
+    border-radius: 0;
+}
+
+.coupon-area .form-control:focus,
+.checkout-area .form-control:focus,
+.country-select select .form-control:focus {
+    border-color: #e7e7e7;
+}
+
+.country-select select.form-control:not([size]):not([multiple]) {
+    height: 45px;
+    font-size: 15px;
+}
+
+.save-info input,
+.shipping .r-inpt {
+    height: auto !important;
+}
+
+/* checkout-area */
+.checkout-area .nice-select {
+    border-radius: 0;
+    height: 45px;
+    line-height: 42px;
+    width: 100%;
+}
+
+.checkout-area .different-address .nice-select {
+    line-height: 2.3
+}
+
+.checkout-area .nice-select::after {
+    height: 8px;
+    right: 22px;
+    width: 8px;
+}
+
+.checkout-area h4 {
+    font-size: 26px;
+}
+
+.save-info p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: .1px;
+}
+
+.order-notes textarea {
+    height: 90px;
+}
+
+.order-notes textarea::placeholder {
+    opacity: 1;
+}
+
+.your-order {
+    background: #f9f9f9;
+}
+
+.your-order-table table th {
+    border-top: medium none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 50%;
+}
+
+.your-order-table table th,
+.your-order-table table td {
+    border-bottom: 1px solid #e7e7e7;
+    border-right: medium none;
+    color: #777;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.payment-method h6 .btn-link {
+    font-size: 13px;
+    color: #292929;
+    font-weight: 500;
+    cursor: pointer;
+}

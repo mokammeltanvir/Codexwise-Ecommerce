@@ -7,11 +7,12 @@
     "require": {
         "php": "^8.0.2",
         "brian2694/laravel-toastr": "^5.57",
+        "bumbummen99/shoppingcart": "^4.2",
         "guzzlehttp/guzzle": "^7.2",
+        "intervention/image": "dev-master",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7",
-        "intervention/image": "dev-master"
+        "laravel/tinker": "^2.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

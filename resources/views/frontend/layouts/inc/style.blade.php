@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/backToTop.css" />
 <link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/fontAwesome5Pro.css" />
+<link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/nice-select.css" />
 <link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/elegantFont.css" />
 <link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/default.css" />
 <link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/style.css" />
+<link rel="stylesheet" href="{{ asset('assets/frontend') }}/css/cart.css" />

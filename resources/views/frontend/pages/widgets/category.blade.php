@@ -23,12 +23,8 @@
                                 </div>
                                 <div class="category__content">
                                     <h3 class="category__title">
-                                        <a href="product.html">{{ $category->title }}</a>
+                                        <a href="{{ route('shop.page') }}">{{ $category->title }}</a>
                                     </h3>
-                                    <a href="product.html" class="link-btn">
-                                        <i class="far fa-long-arrow-right"></i>
-                                        Learn More
-                                    </a>
                                 </div>
                             </div>
                         </div>
