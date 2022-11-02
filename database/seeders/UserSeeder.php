@@ -21,6 +21,8 @@ class UserSeeder extends Seeder
             'is_system_admin' => 1,
             'name' => 'Admin',
             'email' => 'admin@superadmin.com',
+            'phone' => '01700000000',
+            'email_verified_at' => now(),
             'password' => Hash::make(12345678),
             'remember_token' => Str::random(10),
         ]);

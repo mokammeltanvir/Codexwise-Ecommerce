@@ -9,17 +9,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-xxl-8 col-xl-8 col-lg-8 d-none d-lg-block">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 d-none d-lg-block">
                     <div class="main-menu">
                         <nav id="mobile-menu">
                             <ul>
                                 <li>
                                     <a href="{{ route('home') }}">Home</a>
                                 </li>
-                                <li class="has-dropdown">
+                                <li>
                                     <a href="{{ route('shop.page') }}">Shop</a>
                                 </li>
-                                <li>
+                                <li class="has-dropdown">
                                     <a href="blog.html">Blog</a>
                                     <ul class="submenu">
                                         <li><a href="blog.html">Blog</a></li>
@@ -31,15 +31,18 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-8 col-6">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-6">
                     <div class="header__action d-flex align-items-center justify-content-end">
                         <div class="header__login d-none d-sm-block">
-                            <a href="sign-in.html"><i class="far fa-unlock"></i> Log In</a>
+                            <a href="{{ route('login.page') }}"><i class="far fa-unlock"></i> Login</a>
+                        </div>
+                        <div class="header__login d-none d-sm-block">
+                            <a href="{{ route('register.page') }}"><i class="far fa-lock"></i> Register</a>
                         </div>
                         <div class="header__cart d-none d-sm-block">
-                            <a href="#" class="">
+                            <a href="{{ route('cart.page') }}" class="">
                                 <i class="far fa-shopping-cart"></i>
-                                <span>3</span>
+                                <span>0</span>
                             </a>
                         </div>
                         <div class="sidebar__menu d-lg-none">

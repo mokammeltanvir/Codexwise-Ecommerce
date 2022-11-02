@@ -5,7 +5,9 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\TestimonialController;
+use App\Http\Controllers\Frontend\Auth\RegisterController;
 use App\Http\Controllers\Frontend\CartController;
+use App\Http\Controllers\Frontend\CustomerController;
 use App\Http\Controllers\Frontend\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,10 +27,22 @@ Route::prefix('')->group(function () {
     Route::get('/shop', [HomeController::class, 'shopPage'])->name('shop.page');
     Route::get('/single-product/{product_slug}', [HomeController::class, 'productDetails'])->name('productdetail.page');
     Route::get('/shopping-cart', [CartController::class, 'cartPage'])->name('cart.page');
+
+    /*Authentication Routes for Customer*/
+    Route::get('/register', [RegisterController::class, 'registerPage'])->name('register.page');
+    Route::post('/register', [RegisterController::class, 'registerStore'])->name('register.store');
+    Route::get('/login', [RegisterController::class, 'loginPage'])->name('login.page');
+    Route::post('/login', [RegisterController::class, 'loginStore'])->name('login.store');
+
+    Route::prefix('customer/')->middleware('auth')->group(function () {
+        Route::get('/dashboard', [CustomerController::class, 'dashboard'])->name('customer.dashboard');
+        Route::get('/logout', [RegisterController::class, 'logout'])->name('customer.logout');
+    });
+
 });
 
 /**
- * Admin Auth Routes ->
+ * Admin Authentication Routes ->
  */
 Route::prefix('admin/')->group(function () {
 
