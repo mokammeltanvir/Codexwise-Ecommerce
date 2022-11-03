@@ -9,7 +9,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-xxl-7 col-xl-7 col-lg-7 d-none d-lg-block">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 d-none d-lg-block">
                     <div class="main-menu">
                         <nav id="mobile-menu">
                             <ul>
@@ -31,14 +31,25 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-6">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-8 col-6">
                     <div class="header__action d-flex align-items-center justify-content-end">
-                        <div class="header__login d-none d-sm-block">
-                            <a href="{{ route('login.page') }}"><i class="far fa-unlock"></i> Login</a>
-                        </div>
-                        <div class="header__login d-none d-sm-block">
-                            <a href="{{ route('register.page') }}"><i class="far fa-lock"></i> Register</a>
-                        </div>
+                        @auth
+                            <div class="header__login d-none d-sm-block">
+                                <a href="javascript:void(0)"><i class="far fa-unlock"></i> My Account</a>
+                            </div>
+                            <div class="header__login d-none d-sm-block">
+                                <a href="{{ route('customer.logout') }}"><i class="far fa-lock"></i> Logout</a>
+                            </div>
+                        @endauth
+
+                        @guest
+                            <div class="header__login d-none d-sm-block">
+                                <a href="{{ route('login.page') }}"><i class="far fa-unlock"></i> Login</a>
+                            </div>
+                            <div class="header__login d-none d-sm-block">
+                                <a href="{{ route('register.page') }}"><i class="far fa-lock"></i> Register</a>
+                            </div>
+                        @endguest
                         <div class="header__cart d-none d-sm-block">
                             <a href="{{ route('cart.page') }}" class="">
                                 <i class="far fa-shopping-cart"></i>

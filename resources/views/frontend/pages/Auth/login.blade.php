@@ -42,19 +42,32 @@
                             </div>
                         </div>
                         <div class="sign__form">
-                            <form action="#">
+                            <form action="{{ route('login.store') }}" method="post">
+                                @csrf
                                 <div class="sign__input-wrapper mb-25">
                                     <h5>Work email</h5>
                                     <div class="sign__input">
-                                        <input type="text" placeholder="e-mail address">
+                                        <input type="email" placeholder="e-mail address" name="email"
+                                            class="form-control @error('email') is-invalid @enderror">
                                         <i class="fal fa-envelope"></i>
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="sign__input-wrapper mb-10">
                                     <h5>Password</h5>
                                     <div class="sign__input">
-                                        <input type="text" placeholder="Password">
+                                        <input type="Password" placeholder="Password" name="password"
+                                            class="form-control @error('email') is-invalid @enderror">
                                         <i class="fal fa-lock"></i>
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="sign__action d-sm-flex justify-content-between mb-30">
@@ -67,7 +80,7 @@
                                         <a href="#">Forgot your password?</a>
                                     </div>
                                 </div>
-                                <button class="m-btn m-btn-4 w-100"> <span></span> Sign In</button>
+                                <button type="submit" class="m-btn m-btn-4 w-100"> <span></span> Sign In</button>
                                 <div class="sign__new text-center mt-20">
                                     <p>Not yet Account? <a href="{{ route('register.page') }}">Register Here</a></p>
                                 </div>
