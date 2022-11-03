@@ -52,7 +52,9 @@
                                             </td>
                                             <td class="product-subtotal"><span
                                                     class="amount">${{ $cartitem->price * $cartitem->qty }}</span></td>
-                                            <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a>
+                                            <td class="product-remove"><a
+                                                    href="{{ route('remove-from.cart', ['cart_id' => $cartitem->rowId]) }}"><i
+                                                        class="fa fa-times"></i></a>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -68,12 +70,10 @@
                                             placeholder="Coupon code" type="text">
                                         <button class="btn btn-primary btn-lg" name="apply_coupon" type="submit">Apply
                                             coupon</button>
-                                        <a href="{{ route('shop.page') }}" class="btn btn-warning btn-lg">Continue
-                                            Shopping</a>
                                     </div>
                                     <div class="coupon2">
-                                        <button class="btn btn-primary btn-lg" name="update_cart" type="submit">Update
-                                            Cart</button>
+                                        <a href="{{ route('shop.page') }}" class="btn btn-warning btn-lg">Continue
+                                            Shopping</a>
 
                                     </div>
                                 </div>

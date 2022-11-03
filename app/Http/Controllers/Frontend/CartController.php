@@ -39,4 +39,10 @@ class CartController extends Controller
         return redirect()->back();
 
     }
+    public function removeFromCart($cart_id)
+    {
+        Cart::remove($cart_id);
+        Toastr::info('Product Removed from Cart Successfully');
+        return redirect()->back();
+    }
 }
