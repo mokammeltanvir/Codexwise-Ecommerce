@@ -42,6 +42,9 @@ class HomeController extends Controller
 
     public function productDetails($product_slug)
     {
-        return view('frontend.pages.single-product');
+        $product = Product::whereSlug($product_slug)
+            ->with('category', 'productImages')
+            ->first();
+        return view('frontend.pages.single-product', compact('product'));
     }
 }

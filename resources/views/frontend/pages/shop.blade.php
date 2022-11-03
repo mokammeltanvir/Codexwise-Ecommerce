@@ -91,10 +91,12 @@
                                             </a>
                                         </div>
                                         <div class="product__thumb-btn transition-3">
-                                            <a href="#" class="m-btn m-btn-6 mb-15">
+                                            <a href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}"
+                                                class="m-btn m-btn-6 mb-15">
                                                 Buy Now
                                             </a>
-                                            <a href="#" target="_blank" class="m-btn m-btn-7">
+                                            <a href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}"
+                                                target="_blank" class="m-btn m-btn-7">
                                                 Preview Project
                                             </a>
                                         </div>

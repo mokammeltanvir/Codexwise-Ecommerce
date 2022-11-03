@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('frontendTitle')
-    Shopping Cart
+    Cart Page
 @endsection
 
 @section('frontend_content')
@@ -30,36 +30,33 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="shop-details.html"><img
-                                                    src="{{ asset('assets/frontend') }}/img/product/sm/cart-1.jpg"
-                                                    alt=""></a></td>
-                                        <td class="product-name"><a href="shop-details.html">Jacket light</a></td>
-                                        <td class="product-price"><span class="amount">$130.00</span></td>
-                                        <td class="product-quantity">
-                                            <div class="cart-plus-minus"><input type="text" value="1">
-                                                <div class="dec qtybutton">-</div>
-                                                <div class="inc qtybutton">+</div>
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal"><span class="amount">$130.00</span></td>
-                                        <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="shop-details.html"><img
-                                                    src="{{ asset('assets/frontend') }}/img/product/sm/cart-1.jpg"
-                                                    alt=""></a></td>
-                                        <td class="product-name"><a href="shop-details.html">Jacket Pink</a></td>
-                                        <td class="product-price"><span class="amount">$120.50</span></td>
-                                        <td class="product-quantity">
-                                            <div class="cart-plus-minus"><input type="text" value="1">
-                                                <div class="dec qtybutton">-</div>
-                                                <div class="inc qtybutton">+</div>
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal"><span class="amount">$120.50</span></td>
-                                        <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
-                                    </tr>
+                                    @foreach ($carts as $cartitem)
+                                        <tr>
+                                            <td class="product-thumbnail">
+                                                <a href="#"><img
+                                                        src="{{ asset('uploads/product_photos') }}/{{ $cartitem->options->product_image }}"
+                                                        alt="">
+                                                </a>
+                                            </td>
+
+                                            <td class="product-name"><a href="shop-details.html">{{ $cartitem->name }}</a>
+                                            </td>
+                                            <td class="product-price"><span class="amount">${{ $cartitem->price }}</span>
+                                            </td>
+                                            <td class="product-quantity">
+                                                <div class="cart-plus-minus"><input type="text"
+                                                        value="{{ $cartitem->qty }}">
+                                                    <div class="dec qtybutton">-</div>
+                                                    <div class="inc qtybutton">+</div>
+                                                </div>
+                                            </td>
+                                            <td class="product-subtotal"><span
+                                                    class="amount">${{ $cartitem->price * $cartitem->qty }}</span></td>
+                                            <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+
                                 </tbody>
                             </table>
                         </div>
@@ -71,10 +68,13 @@
                                             placeholder="Coupon code" type="text">
                                         <button class="btn btn-primary btn-lg" name="apply_coupon" type="submit">Apply
                                             coupon</button>
+                                        <a href="{{ route('shop.page') }}" class="btn btn-warning btn-lg">Continue
+                                            Shopping</a>
                                     </div>
                                     <div class="coupon2">
                                         <button class="btn btn-primary btn-lg" name="update_cart" type="submit">Update
                                             Cart</button>
+
                                     </div>
                                 </div>
                             </div>
@@ -84,8 +84,8 @@
                                 <div class="cart-page-total">
                                     <h2>Cart totals</h2>
                                     <ul class="mb-20">
-                                        <li>Subtotal <span>$250.00</span></li>
-                                        <li>Total <span>$250.00</span></li>
+                                        <li>Subtotal <span>${{ $total_price }}</span></li>
+                                        <li>Total <span>${{ $total_price }}</span></li>
                                     </ul>
                                     <a class="btn btn-success btn-lg" href="checkout.html">Proceed to checkout</a>
                                 </div>

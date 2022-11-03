@@ -15,16 +15,18 @@
                     <div class="product__item white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
                         <div class="product__thumb">
                             <div class="product__thumb-inner fix w-img">
-                                <a href="product-details.html">
+                                <a href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}">
                                     <img src="{{ asset('uploads/product_photos') }}/{{ $product->product_image }}"
                                         alt="">
                                 </a>
                             </div>
                             <div class="product__thumb-btn transition-3">
-                                <a href="#" class="m-btn m-btn-6 mb-15">
+                                <a href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}"
+                                    class="m-btn m-btn-6 mb-15">
                                     Buy Now
                                 </a>
-                                <a href="#" target="_blank" class="m-btn m-btn-7">
+                                <a href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}"
+                                    target="_blank" class="m-btn m-btn-7">
                                     Preview Project
                                 </a>
                             </div>
@@ -39,7 +41,8 @@
                                 </div>
                             </div>
                             <h3 class="product__title">
-                                <a href="#">{{ $product->name }}</a>
+                                <a
+                                    href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}">{{ $product->name }}</a>
                             </h3>
                             <p class="product__author">by <a href="#">Theme Pure</a> in <a
                                     href="#">Templates</a></p>

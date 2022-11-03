@@ -16,11 +16,11 @@
             <div class="row">
                 <div class="col-xxl-12">
                     <div class="page__title-content mb-50">
-                        <h2 class="page__title">Zibber-Business Consulting.</h2>
+                        <h2 class="page__title">{{ $product->name }}</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="product.html">Product</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('shop.page') }}">Product</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Current</li>
                             </ol>
                         </nav>
@@ -37,9 +37,30 @@
             <div class="row">
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                     <div class="product__wrapper">
+
                         <div class="product__details-thumb w-img mb-30">
-                            <img src="{{ asset('assets/frontend') }}/img/product/details/pro-de-1.jpg"
+                            <img src="{{ asset('uploads/product_photos') }}/{{ $product->product_image }}"
                                 alt="product-details">
+                        </div>
+                        <!-- Multiple Images -->
+
+                        <div class="row">
+                            @foreach ($product->productImages as $image)
+                                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 mb-10">
+
+                                    <div class="view overlay zoom" data-ripple-color="light">
+                                        <img src="{{ asset('uploads/product_photos') }}/{{ $image->product_multiple_image }}"
+                                            class="img-fluid" />
+
+                                    </div>
+                                </div>
+                            @endforeach
+
+                        </div>
+                        <!-- Multiple Images -->
+
+
+                        <div class="product__details-content">
                         </div>
                         <div class="product__details-content">
                             <div class="product__tab mb-40">
@@ -61,82 +82,11 @@
                                     <div class="tab-pane fade show active" id="overview" role="tabpanel"
                                         aria-labelledby="overview-tab">
                                         <div class="product__overview">
-                                            <h3 class="product__overview-title">Template Details</h3>
-                                            <p>The little rotter absolutely bladdered wind up victoria sponge starkers
-                                                cack posh jolly good lost the plot nancy boy bonnet plastered, bevvy say
-                                                the bee's knees only a quid well bodge daft bits and bobs amongst my
-                                                good sir golly gosh crikey, the wireless Eaton mush Harry codswallop
-                                                boot porkies up the duff morish cor blimey guvnor. Faff about blower
-                                                twit Why it's your round matie boy bog-standard, say A bit of how's your
-                                                father.</p>
-                                            <p>What a plonker say william mush bite your arm off brown bread chinwag he
-                                                legged it the bee's knees lost the plot loo gutted mate old, zonked bog
-                                                Harry morish cup of char butty blag get stuffed mate cobblers cockup.!
-                                            </p>
-                                            <div class="product__features mt-40">
-                                                <h3 class="product__overview-title">Template Features:</h3>
-                                                <ol>
-                                                    <li>
-                                                        <p>Fully Responsive Layout</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>CMS for Courses (Products)</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>CMS for Workshops</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Symbols for Common Elements</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Pre-Built Templates for Common Pages</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Royalty-Free Google Fonts</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Easy-to-Change Global Color Swatches</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Working Contact Page</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Slider Testimonial Section</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Elegant Micro Interactions</p>
-                                                    </li>
-                                                </ol>
-                                            </div>
-                                            <div class="product__features">
-                                                <h3 class="product__overview-title">Design Layout</h3>
-                                                <ol>
-                                                    <li>
-                                                        <p>Home / Landing</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Products Collection</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Services</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>App Collection</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Blog Collection</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Individual Blog Article</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>About</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Contact</p>
-                                                    </li>
-                                                </ol>
-                                            </div>
+                                            <h3 class="product__overview-title">{{ $product->name }}</h3>
+                                            <p>{{ $product->long_description }}</p>
+
+
+
                                             <div class="product__social m-social grey-bg-2">
                                                 <h4 class="product__social-title">Follow us</h4>
                                                 <ul>
@@ -225,7 +175,13 @@
                             </div>
                         </div>
                     </div>
+                    <!-- product tab end -->
+
                 </div>
+
+
+
+                <!-- Right Sidebar -->
                 <div class="col-xxl-4 col-xl-4 col-lg-4">
                     <div class="product__details-sidebar ml-30">
                         <div class="product__proprietor white-bg mb-30">
@@ -233,57 +189,47 @@
                                 <div class="product__prorietor-info mb-20 d-flex justify-content-between">
                                     <div class="product__proprietor-avater d-flex align-items-center">
                                         <div class="product__proprietor-thumb">
-                                            <img src="{{ asset('assets/frontend') }}/img/product/proprietor/proprietor-1.jpg"
+                                            <img src="{{ asset('uploads/product_photos') }}/{{ $product->product_image }}"
                                                 alt="">
                                         </div>
                                         <div class="product__proprietor-name">
-                                            <h5><a href="#">Justin Case</a></h5>
-                                            <a href="#">View Profile</a>
+                                            <h5><a href="#">Product Price:</a></h5>
                                         </div>
                                     </div>
                                     <div class="product__proprietor-price">
-                                        <span class="d-flex align-items-start"><span>$</span>49</span>
+                                        <span
+                                            class="d-flex align-items-start"><span>$</span>{{ $product->product_price }}</span>
                                     </div>
                                 </div>
                                 <div class="product__proprietor-text">
-                                    <p>Jeffrey arse over tit give us a bell old posh morish wellies cheeky.</p>
+                                    <p>{{ $product->short_description }}</p>
                                 </div>
                             </div>
                             <div class="product__proprietor-body fix">
-                                <ul class="mb-10 fix">
-                                    <li>
-                                        <h6>Downloads:</h6>
-                                        <span>44</span>
-                                    </li>
-                                    <li>
-                                        <h6>Released On:</h6>
-                                        <span>16 February 2021</span>
-                                    </li>
-                                    <li>
-                                        <h6>Version:</h6>
-                                        <span>1.0</span>
-                                    </li>
-                                    <li>
-                                        <h6>Compatibility:</h6>
-                                        <span>Elementor</span>
-                                    </li>
-                                    <li>
-                                        <h6>Framework:</h6>
-                                        <span>Redux:</span>
-                                    </li>
+
+                                <ul class="rating mb-10 fix">
                                 </ul>
-                                <a href="pricing.html" class="m-btn m-btn-2 w-100 mb-20"> <span></span> Buy Now</a>
-                                <a href="pricing.html" class="m-btn m-btn-border w-100"> <span></span> Preview
-                                    Project</a>
+                                <ul class="input-style">
+                                    <form action="{{ route('add-to.cart') }}" method="post">
+                                        @csrf
+                                        <input type="hidden" name="product_slug" value="{{ $product->slug }}">
+                                        <li class="quantity cart-plus-minus">
+                                            <input type="number" value="1" name="order_qty" />
+                                        </li>
+
+                                        <button type="submit" class="m-btn m-btn-2 w-100 mb-20 mt-10">Add to
+                                            Cart</button>
+
+                                    </form>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="sidebar__banner"
-                            data-background="{{ asset('assets/frontend') }}/img/banner/sidebar-banner.jpg">
-                            <h4 class="sidebar__banner-title">Check Out <br>Our free Templates</h4>
-                            <a href="product.html" class="m-btn m-btn-white"> <span></span> free template</a>
                         </div>
                     </div>
                 </div>
+                <!-- Right Sidebar -->
+
+
+
             </div>
         </div>
     </section>
