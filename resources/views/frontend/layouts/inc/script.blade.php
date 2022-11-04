@@ -13,7 +13,6 @@
 <script src="{{ asset('assets/frontend') }}/js/wow.min.js"></script>
 <script src="{{ asset('assets/frontend') }}/js/imagesloaded.pkgd.min.js"></script>
 <script src="{{ asset('assets/frontend') }}/js/main.js"></script>
-<script src="{{ asset('assets/frontend') }}/js/cart.js"></script>
 <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
 {!! Toastr::message() !!}
 

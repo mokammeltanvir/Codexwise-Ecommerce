@@ -51,9 +51,14 @@
                             </div>
                         @endguest
                         <div class="header__cart d-none d-sm-block">
-                            <a href="{{ route('cart.page') }}" class="">
+                            @php
+                                $carts = \Gloudemans\Shoppingcart\Facades\Cart::content();
+                            @endphp
+                            <a href="javascript:void(0);" class="cart-toggle-btn">
                                 <i class="far fa-shopping-cart"></i>
-                                <span>0</span>
+                                @foreach ($carts as $item)
+                                    <span class="cart-quantity">{{ $item->qty }}</span>
+                                @endforeach
                             </a>
                         </div>
                         <div class="sidebar__menu d-lg-none">

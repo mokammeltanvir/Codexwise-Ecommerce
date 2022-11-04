@@ -58,20 +58,20 @@
 	});
 
 	////////////////////////////////////////////////////
-    // 02. Cart Toggle Js
-	// $(".cart-toggle-btn").on("click", function () {
-	// 	$(".cartmini__wrapper").addClass("opened");
-	// 	$(".body-overlay").addClass("opened");
-	// });
-	// $(".cartmini__close-btn").on("click", function () {
-	// 	$(".cartmini__wrapper").removeClass("opened");
-	// 	$(".body-overlay").removeClass("opened");
-	// });
-	// $(".body-overlay").on("click", function () {
-	// 	$(".cartmini__wrapper").removeClass("opened");
-	// 	$(".sidebar__area").removeClass("sidebar-opened");
-	// 	$(".body-overlay").removeClass("opened");
-	// });
+    //02. Cart Toggle Js
+	$(".cart-toggle-btn").on("click", function () {
+		$(".cartmini__wrapper").addClass("opened");
+		$(".body-overlay").addClass("opened");
+	});
+	$(".cartmini__close-btn").on("click", function () {
+		$(".cartmini__wrapper").removeClass("opened");
+		$(".body-overlay").removeClass("opened");
+	});
+	$(".body-overlay").on("click", function () {
+		$(".cartmini__wrapper").removeClass("opened");
+		$(".sidebar__area").removeClass("sidebar-opened");
+		$(".body-overlay").removeClass("opened");
+	});
 
     // 21. Cart Plus Minus Js
 	$(".cart-plus-minus").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
