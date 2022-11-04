@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('frontendTitle')
-    Register
+    Customer Dashboard
 @endsection
 @section('frontend_content')
     <!-- bg shape area start -->

@@ -7213,3 +7213,262 @@ div.product_new_item a {
     font-weight: 500;
     cursor: pointer;
 }
+
+
+
+/*===========================
+checkout style here
+===========================*/
+
+.form-style input,
+.form-style select,
+.form-style textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.form-style textarea {
+    height: 150px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.form-style input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+
+.create-account p {
+    margin-bottom: 15px;
+}
+
+.form-style label {
+    line-height: 18px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.create-account {
+    display: none;
+}
+
+.form-style input#toggle2 {
+    top: 0;
+}
+
+label.fontsize {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#open2 {
+    display: none;
+}
+
+.order-area h3,
+.checkout-form h3 {
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+.total-cost,
+.payment-method {
+    margin-bottom: 40px;
+}
+
+.total-cost li {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d7d7d7;
+    color: #333;
+}
+
+.total-cost li:last-child {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.payment-method li {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.order-area button,
+.account-form button {
+    height: 45px;
+    width: 100%;
+    background: #5f3afc;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+}
+
+.order-area button:hover,
+.account-form button:hover {
+    background: #453bc6;
+}
+
+.account-form button {
+    margin: 10px 0px 20px;
+}
+
+.blog-details-wrap h3 {
+    margin: 30px 0px 0px 0;
+    font-size: 30px;
+}
+
+.meta {
+    margin-bottom: 20px;
+}
+
+.meta li {
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+    position: relative;
+    color: #ef4836;
+}
+
+.meta li:before {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    content: "/";
+}
+
+.meta li:first-child:before {
+    display: none;
+}
+
+.blog-details-wrap p {
+    margin-bottom: 20px;
+}
+
+.list {
+    margin: 10px 0px 25px;
+}
+
+.list li {
+    line-height: 28px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.list li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\f0da";
+    font-family: fontawesome;
+    color: #ef4836;
+}
+
+.share-wrap {
+    border-top: 1px solid #ef4836;
+    border-bottom: 1px solid #ef4836;
+    padding: 25px 0px;
+    margin: 30px 0px 50px;
+}
+
+.share-wrap .socil-icon li {
+    margin-right: 5px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.blog-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.blog-title:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 2px;
+    background: #ef4836;
+    content: "";
+}
+
+ol {
+    list-style: none;
+}
+
+.comment-wrapper {
+    position: relative;
+}
+
+.comment-wrap {
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 30px;
+}
+
+.comment-theme {
+    float: left;
+    margin-right: 30px;
+}
+
+.comment-main-area {
+    overflow: hidden;
+}
+
+.comment-wrap1 {
+    margin-left: 70px;
+}
+
+.sewl-comments-meta h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.sewl-comments-meta span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #ef4836;
+    font-size: 13px;
+}
+
+.comment-area p {
+    margin-bottom: 10px;
+}
+
+.form-submit input {
+    width: 125px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+    background: #333;
+    cursor: pointer;
+    margin: 30px 0px 0px;
+}
+
+.form-submit input:hover {
+    background: #ef4836;
+}
+
+.recent_post .post-content a {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recent_post .post-content p {
+    font-size: 13px;
+    color: #333;
+}

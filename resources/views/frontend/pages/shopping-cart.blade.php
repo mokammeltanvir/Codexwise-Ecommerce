@@ -108,7 +108,8 @@
                                         <li>Total: <span>${{ $total_price }}</span></li>
                                     @endif
                                 </ul>
-                                <a class="btn btn-success btn-lg" href="checkout.html">Proceed to checkout</a>
+                                <a class="btn btn-success btn-lg" href="{{ route('customer.checkoutpage') }}">Proceed to
+                                    checkout</a>
                             </div>
                         </div>
                     </div>

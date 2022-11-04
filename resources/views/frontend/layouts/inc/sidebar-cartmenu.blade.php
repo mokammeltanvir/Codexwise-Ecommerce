@@ -52,7 +52,7 @@
                 <div class="cartmini__checkout-btn">
                     <a href="{{ route('cart.page') }}" class="m-btn m-btn-border mb-10 w-100">
                         <span></span> view cart</a>
-                    <a href="checkout.html" class="m-btn m-btn-3 w-100">
+                    <a href="{{ route('customer.checkoutpage') }}" class="m-btn m-btn-3 w-100">
                         <span></span> checkout</a>
                 </div>
             </div>

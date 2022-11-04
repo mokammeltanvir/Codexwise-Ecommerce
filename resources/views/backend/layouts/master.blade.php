@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>CodexWise | @yield('title')</title>
+    <title>CodexWise-Admin | @yield('title')</title>
     <meta name="description" content="Ecommerce Dashboard" />
 
     @include('backend.layouts.inc.style')

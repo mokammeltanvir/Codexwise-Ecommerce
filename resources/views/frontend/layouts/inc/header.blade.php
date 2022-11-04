@@ -20,13 +20,13 @@
                                     <a href="{{ route('shop.page') }}">Shop</a>
                                 </li>
                                 <li class="has-dropdown">
-                                    <a href="blog.html">Blog</a>
+                                    <a href="#">Blog</a>
                                     <ul class="submenu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
