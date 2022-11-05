@@ -2,15 +2,30 @@
 
 ## About CodexWise-Laravel-ECommerce V-1
 
-It is a Laravel 9 blade template based project reflecting advance features of a single vendor ecommerce platform. This Project is Developed by [Mokammel Hossain Tanvir](https://github.com/mokammeltanvir) as Backend Developer, [Mehedin Hasan Anik](https://github.com/) as Frontend Developer and [Nayem Islam](https://github.com/) as Web Designer. This project for learning purpose for ICT-3204-Project-2 Course is a part of B.Sc. in Computer Science and Engineering (CSE) program of [Shanto-Mariam University of Creative Technology](https://smuct.ac.bd/).
+It is a Laravel 9 blade template based project reflecting full features of a single vendor eCommerce platform. This Project is Developed by [Mokammel Hossain Tanvir](https://github.com/mokammeltanvir) as Backend Developer, [Mehedin Hasan Anik](https://github.com/mehedihanik) as Frontend Developer and [Nayem Islam](https://github.com/) as Web Designer. This project for learning purpose for ICT-3204-Project-2 Course is a part of B.Sc. in Computer Science and Engineering (CSE) program of [Shanto-Mariam University of Creative Technology](https://smuct.ac.bd/).
 
-1. Bootstrap 4.6
-2. laravel/jetstream
-3. laravel/sanctum: ^2.11
-4. intervention/image: ^2.5
+##
+
+## :card_index_dividers: Tech Stack
+
+**FrontEnd:**
+
+1. HTML
+2. CSS
+3. JavaScript
+4. jQuery/JS Plugins
+5. Bootstrap 4
+
+**BackEnd:**
+
+1. Laravel: ^9.19
+2. PHP: ^8.0.2
+3. bumbummen99/shoppingcart ^4.2
+4. intervention/image
 5. Sweet Alert 2.0
 6. Notification Alert -Toastr
 7. Datatables
+8. MySQL
 
 ## Getting Started Step by Step
 
