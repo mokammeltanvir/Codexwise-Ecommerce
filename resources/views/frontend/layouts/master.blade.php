@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/frontend') }}/img/favicon.png" />
     <!-- CSS here -->
     @include('frontend.layouts.inc.style')
 </head>

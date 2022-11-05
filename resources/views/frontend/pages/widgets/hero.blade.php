@@ -13,11 +13,12 @@
                     <div class="hero__content">
                         <h2 class="hero__title">
                             <span>The world’s largest</span>
-                            WordPress Themes Collection.
+                            E-Commerce Marketplace.
                         </h2>
                         <p>
-                            The bee's knees pardon you plastered it's all gone to pot
-                            cheeky bugger wind up down.
+                            “We see our customers as invited guests to a party, and we are the hosts. It’s our job every
+                            day to make every important aspect of the customer experience a little bit better.” – Jeff
+                            Bezos
                         </p>
                         <div class="hero__search">
                             <form action="#">

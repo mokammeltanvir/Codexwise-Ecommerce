@@ -68,13 +68,8 @@
                             </a>
                             <ul id="orders">
                                 <li>
-                                    <a href="Orders.List.html">
+                                    <a href="{{ route('admin.orderlist') }}">
                                         <span class="label">Order List</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="Orders.Detail.html">
-                                        <span class="label">Order Detail</span>
                                     </a>
                                 </li>
                             </ul>
@@ -86,13 +81,8 @@
                             </a>
                             <ul id="customers">
                                 <li>
-                                    <a href="Customers.List.html">
+                                    <a href="{{ route('admin.customerlist') }}">
                                         <span class="label">Customer List</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="Customers.Detail.html">
-                                        <span class="label">Customer Detail</span>
                                     </a>
                                 </li>
                             </ul>
