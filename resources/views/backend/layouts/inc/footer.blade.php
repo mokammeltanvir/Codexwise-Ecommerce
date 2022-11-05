@@ -4,12 +4,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <p class="mb-0 text-muted text-medium">CodexWise E-Commerce v1</p>
+                        <p class="mb-0 text-muted text-medium">E-Commerce Project CodexWise v1</p>
                     </div>
                     <div class="col-sm-6 d-none d-sm-block">
                         <ul class="breadcrumb pt-0 pe-0 mb-0 float-end">
                             <li class="breadcrumb-item mb-0 text-medium"><a href="#" class="btn-link">Developed by
-                                    CodexWise Team</a></li>
+                                    CodexWise-Team</a></li>
                         </ul>
                     </div>
                 </div>

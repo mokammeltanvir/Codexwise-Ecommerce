@@ -171,7 +171,7 @@ class Nav {
     document.querySelector('#menu').classList.add('show');
 
     this._matchUrl();
-    this._initVerticalMenu();
+    // this._initVerticalMenu();
     this._initIcons();
   }
 
