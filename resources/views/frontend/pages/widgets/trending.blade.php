@@ -5,14 +5,15 @@
                         <div class="section__title-wrapper mb-50">
                             <h2 class="section__title">
                                 Trending <br />
-                                Landmark Themes
+                                Products
                             </h2>
                             <p>Jeffrey pardon me jolly good.</p>
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg col-md-4">
                         <div class="trending__more d-flex justify-content-md-end mb-50">
-                            <a href="product.html" class="m-btn m-btn-border"><span></span>Explore Cloneables</a>
+                            <a href="{{ route('shop.page') }}" class="m-btn m-btn-border"><span></span>Explore
+                                Cloneables</a>
                         </div>
                     </div>
                 </div>
@@ -21,7 +22,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-1.jpg"
                                             alt="" />
                                     </a>
@@ -29,7 +30,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">Zibber WP Theme</a>
+                                    <a href="#">Zibber WP Theme</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -47,7 +48,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-2.jpg"
                                             alt="" />
                                     </a>
@@ -55,7 +56,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">React App Landing</a>
+                                    <a href="#">React App Landing</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -74,7 +75,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".7s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-3.jpg"
                                             alt="" />
                                     </a>
@@ -82,7 +83,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">Digital Marketing</a>
+                                    <a href="#">Digital Marketing</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -100,7 +101,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-4.jpg"
                                             alt="" />
                                     </a>
@@ -108,7 +109,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">Ad Manager Admin</a>
+                                    <a href="#">Ad Manager Admin</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -126,7 +127,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-5.jpg"
                                             alt="" />
                                     </a>
@@ -134,7 +135,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">UI Template</a>
+                                    <a href="#">UI Template</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -152,7 +153,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".7s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-6.jpg"
                                             alt="" />
                                     </a>
@@ -160,7 +161,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">Email Template</a>
+                                    <a href="#">Email Template</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -178,7 +179,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-7.jpg"
                                             alt="" />
                                     </a>
@@ -186,7 +187,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">Multipurpose Store</a>
+                                    <a href="#">Multipurpose Store</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -204,7 +205,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-8.jpg"
                                             alt="" />
                                     </a>
@@ -212,7 +213,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">Responsive Agency</a>
+                                    <a href="#">Responsive Agency</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">
@@ -230,7 +231,7 @@
                         <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".7s">
                             <div class="trending__thumb mr-25">
                                 <div class="trending__thumb-inner fix">
-                                    <a href="product-details.html">
+                                    <a href="#">
                                         <img src="{{ asset('assets/frontend') }}/img/trending/tren-9.jpg"
                                             alt="" />
                                     </a>
@@ -238,7 +239,7 @@
                             </div>
                             <div class="trending__content">
                                 <h3 class="trending__title">
-                                    <a href="product-details.html">Admin Dashboard</a>
+                                    <a href="#">Admin Dashboard</a>
                                 </h3>
                                 <p>Knees up arse blimey say happy days.</p>
                                 <div class="trending__meta d-flex justify-content-between">

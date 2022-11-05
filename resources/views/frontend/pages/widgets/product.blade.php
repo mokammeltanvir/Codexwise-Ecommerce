@@ -55,7 +55,7 @@
         <div class="row">
             <div class="col-xxl-12">
                 <div class="product__more text-center mt-30">
-                    <a href="product.html" class="m-btn m-btn-2"> <span></span> Explore Premium</a>
+                    <a href="{{ route('shop.page') }}" class="m-btn m-btn-2"> <span></span> Explore Premium</a>
                 </div>
             </div>
         </div>

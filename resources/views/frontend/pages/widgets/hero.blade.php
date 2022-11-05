@@ -39,7 +39,7 @@
                     <div class="hero__thumb-wrapper scene ml-70">
                         <div class="hero__thumb one d-none d-lg-block">
                             <img class="layer" data-depth="0.2"
-                                src="{{ asset('assets/frontend') }}/img/hero/hero-1.jpeg" alt="" />
+                                src="{{ asset('assets/frontend') }}/img/hero/hero-1.jpg" alt="" />
                         </div>
                         <div class="hero__thumb two">
                             <img class="layer" data-depth="0.3"
