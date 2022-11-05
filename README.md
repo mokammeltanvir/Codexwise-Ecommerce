@@ -33,7 +33,7 @@ It is a Laravel 9 blade template based project reflecting full features of a sin
 2. Open terminal (bash/cmd). Then go to project folder using command
 
 ```sh
-cd CodexWise-Laravel-Ecommerce
+cd ICT3204-Project-Ecommerce
 ```
 
 3. Then install required files and libraries using
