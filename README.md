@@ -2,7 +2,7 @@
 
 ## About CodexWise-Laravel-ECommerce V-1
 
-It is a Laravel 9 blade template based project reflecting full features of a single vendor eCommerce platform. This Project is Developed by [Mokammel Hossain Tanvir](https://github.com/mokammeltanvir) as Backend Developer, [Mehedin Hasan Anik](https://github.com/mehedihanik) as Frontend Developer and [Nayem Islam](https://github.com/) as Web Designer. This project for learning purpose for ICT-3204-Project-2 Course is a part of B.Sc. in Computer Science and Engineering (CSE) program of [Shanto-Mariam University of Creative Technology](https://smuct.ac.bd/).
+It is a Laravel 9 blade template based project reflecting full features of a single vendor eCommerce platform. This Project is Developed by [Mokammel Hossain Tanvir](https://github.com/mokammeltanvir) as Backend Developer, [Mehedin Hasan Anik](https://github.com/mehedihanik) as Frontend Developer and [Nayem Islam](https://github.com/nayem18) as Web Designer. This project for learning purpose for ICT-3204-Project-2 Course is a part of B.Sc. in Computer Science and Engineering (CSE) program of [Shanto-Mariam University of Creative Technology](https://smuct.ac.bd/).
 
 ##
 
