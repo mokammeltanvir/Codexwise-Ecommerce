@@ -29,12 +29,12 @@
                                     <div class="sidebar__widget-content">
                                         <div class="sidebar__check-wrapper">
                                             <ul>
-                                                @foreach ($categories_left as $category_left)
+                                                @foreach ($categories as $category)
                                                     <li class="d-flex justify-content-between align-items-center">
                                                         <div class="sidebar__check d-flex align-items-center">
-                                                            <a href="{{ $category_left->slug }}">
+                                                            <a href="{{ $category->slug }}">
                                                                 <label class="m-check-label"
-                                                                    for="m-wp">{{ $category_left->title }}</label>
+                                                                    for="m-wp">{{ $category->title }}</label>
                                                             </a>
                                                         </div>
                                                         <span>76</span>
@@ -81,13 +81,14 @@
                 <!--Shoppage content area start -->
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                     <div class="row">
-                        @foreach ($allproducts as $product)
+                        @foreach ($category->products as $cproduct)
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                                 <div class="product__item white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
                                     <div class="product__thumb">
                                         <div class="product__thumb-inner fix w-img">
-                                            <a href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}">
-                                                <img src="{{ asset('uploads/product_photos') }}/{{ $product->product_image }}"
+                                            <a
+                                                href="{{ route('productdetail.page', ['product_slug' => $cproduct->slug]) }}">
+                                                <img src="{{ asset('uploads/product_photos') }}/{{ $cproduct->product_image }}"
                                                     alt="">
                                             </a>
                                         </div>
@@ -96,7 +97,7 @@
                                                 class="m-btn m-btn-6 mb-15">
                                                 Buy Now
                                             </a>
-                                            <a href="{{ route('productdetail.page', ['product_slug' => $product->slug]) }}"
+                                            <a href="{{ route('productdetail.page', ['product_slug' => $cproduct->slug]) }}"
                                                 target="_blank" class="m-btn m-btn-7">
                                                 Preview Project
                                             </a>
@@ -108,7 +109,7 @@
                                                 <a href="#">Business</a>
                                             </div>
                                             <div class="product__price">
-                                                <span>${{ $product->product_price }}</span>
+                                                <span>${{ $cproduct->product_price }}</span>
                                             </div>
                                         </div>
                                         <h3 class="product__title">
@@ -128,7 +129,7 @@
                             <div class="basic-pagination wow fadeInUp text-center mt-20" data-wow-delay=".2s">
                                 <ul>
                                     <li>
-                                        {{ $allproducts->links() }}
+                                        {{ $cproduct->links() }}
                                     </li>
                                 </ul>
 

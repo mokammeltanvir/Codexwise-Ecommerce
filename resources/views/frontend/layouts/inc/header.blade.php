@@ -35,7 +35,7 @@
                     <div class="header__action d-flex align-items-center justify-content-end">
                         @auth
                             <div class="header__login d-none d-sm-block">
-                                <a href="javascript:void(0)"><i class="far fa-unlock"></i> My Account</a>
+                                <a href="{{ route('customer.dashboard') }}"><i class="far fa-unlock"></i> My Account</a>
                             </div>
                             <div class="header__login d-none d-sm-block">
                                 <a href="{{ route('customer.logout') }}"><i class="far fa-lock"></i> Logout</a>
