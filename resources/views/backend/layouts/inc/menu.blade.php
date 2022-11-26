@@ -60,9 +60,27 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="#blog" data-href="">
+                                <i data-cs-icon="cupcake" class="icon" data-cs-size="18"></i>
+                                <span class="label">Blogs</span>
+                            </a>
+                            <ul id="blog">
+                                <li>
+                                    <a href="{{ route('blog.index') }}">
+                                        <span class="label">Blogs List</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('blog.create') }}">
+                                        <span class="label">Add New Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
                         <li>
-                            <a href="#orders" data-href="Orders.html">
+                            <a href="#orders" data-href="#">
                                 <i data-cs-icon="cart" class="icon" data-cs-size="18"></i>
                                 <span class="label">Orders</span>
                             </a>
@@ -75,7 +93,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#customers" data-href="Customers.html">
+                            <a href="#customers" data-href="#">
                                 <i data-cs-icon="user" class="icon" data-cs-size="18"></i>
                                 <span class="label">Customers</span>
                             </a>
@@ -88,50 +106,50 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#storefront" data-href="Storefront.html">
+                            <a href="#storefront" data-href="#">
                                 <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
                                 <span class="label">Storefront</span>
                             </a>
                             <ul id="storefront">
                                 <li>
-                                    <a href="Storefront.Home.html">
+                                    <a href="#">
                                         <span class="label">Home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Storefront.Filters.html">
+                                    <a href="#">
                                         <span class="label">Filters</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Storefront.Categories.html">
+                                    <a href="#">
                                         <span class="label">Categories</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Storefront.Detail.html">
+                                    <a href="#">
                                         <span class="label">Detail</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Storefront.Cart.html">
+                                    <a href="#">
                                         <span class="label">Cart</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Storefront.Checkout.html">
+                                    <a href="#">
                                         <span class="label">Checkout</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Storefront.Invoice.html">
+                                    <a href="#">
                                         <span class="label">Invoice</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="Shipping.html">
+                            <a href="#">
                                 <i data-cs-icon="shipping" class="icon" data-cs-size="18"></i>
                                 <span class="label">Shipping</span>
                             </a>
@@ -143,7 +161,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="Settings.html">
+                            <a href="{{ route('admin.dashboard') }}">
                                 <i data-cs-icon="gear" class="icon" data-cs-size="18"></i>
                                 <span class="label">Settings</span>
                             </a>

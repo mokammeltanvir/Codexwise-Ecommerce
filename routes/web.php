@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\BlogController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\CouponController;
 use App\Http\Controllers\Backend\CustomerController as BackendCustomerController;
@@ -78,6 +79,7 @@ Route::prefix('admin/')->group(function () {
         Route::resource('category', CategoryController::class);
         Route::resource('testimonial', TestimonialController::class);
         Route::resource('products', ProductController::class);
+        Route::resource('blog', BlogController::class);
         Route::resource('coupon', CouponController::class);
 
         Route::get('order-list', [OrderController::class, 'index'])->name('admin.orderlist');
