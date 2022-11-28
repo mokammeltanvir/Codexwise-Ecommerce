@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Backend\BlogController;
+use App\Http\Controllers\Backend\BlogController as BackendBlogController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\CouponController;
 use App\Http\Controllers\Backend\CustomerController as BackendCustomerController;
@@ -10,6 +10,7 @@ use App\Http\Controllers\Backend\OrderController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Frontend\Auth\RegisterController;
+use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Frontend\CheckoutController;
 use App\Http\Controllers\Frontend\CustomerController;
@@ -30,6 +31,8 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('')->group(function () {
     Route::get('/', [HomeController::class, 'home'])->name('home');
     Route::get('/shop', [HomeController::class, 'shopPage'])->name('shop.page');
+    Route::get('/blog', [BlogController::class, 'blogPage'])->name('blog.page');
+    Route::get('/blog-details/{slug}', [BlogController::class, 'blogDetails'])->name('blogdetail.page');
     Route::get('/category/{slug}', [HomeController::class, 'shopPageByCategory'])->name('shop.page.category');
     Route::get('/single-product/{product_slug}', [HomeController::class, 'productDetails'])->name('productdetail.page');
     Route::get('/shopping-cart', [CartController::class, 'cartPage'])->name('cart.page');
@@ -79,7 +82,7 @@ Route::prefix('admin/')->group(function () {
         Route::resource('category', CategoryController::class);
         Route::resource('testimonial', TestimonialController::class);
         Route::resource('products', ProductController::class);
-        Route::resource('blog', BlogController::class);
+        Route::resource('blog', BackendBlogController::class);
         Route::resource('coupon', CouponController::class);
 
         Route::get('order-list', [OrderController::class, 'index'])->name('admin.orderlist');

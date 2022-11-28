@@ -37,6 +37,7 @@ class HomeController extends Controller
 
         return view('frontend.pages.shop', compact('categories_left', 'allproducts'));
     }
+
     //shop page category wise product show
     public function shopPageByCategory($slug)
     {

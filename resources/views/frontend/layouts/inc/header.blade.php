@@ -19,12 +19,9 @@
                                 <li>
                                     <a href="{{ route('shop.page') }}">Shop</a>
                                 </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Blog</a>
-                                    <ul class="submenu">
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Blog Details</a></li>
-                                    </ul>
+                                <li>
+                                    <a href="{{ route('blog.page') }}">Blog</a>
+
                                 </li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
