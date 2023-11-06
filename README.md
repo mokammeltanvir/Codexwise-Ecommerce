@@ -2,7 +2,7 @@
 
 ## About CodexWise-Laravel-ECommerce V-1
 
-It is a Laravel 9 blade template based project reflecting full features of a single vendor eCommerce platform. This Project is Developed by [Mokammel Hossain Tanvir](https://github.com/mokammeltanvir) as Backend Developer, [Mehedin Hasan Anik](https://github.com/mehedihanik) as Frontend Developer and [Nayem Islam](https://github.com/nayem18) as Web Designer. This project for learning purpose for ICT-3204-Project-2 Course is a part of B.Sc. in Computer Science and Engineering (CSE) program of [Shanto-Mariam University of Creative Technology](https://smuct.ac.bd/).
+It is a Laravel-9 blade template-based project reflecting the full features of a single vendor eCommerce platform. This Project is Developed by [Mokammel Hossain Tanvir](https://github.com/mokammeltanvir) as Backend Developer, [Mehedin Hasan Anik](https://github.com/mehedihanik) as Frontend Developer, and [Nayem Islam](https://github.com/nayem18) as Web Designer. This project for learning purposes for the ICT-3204-Project-2 Course is a part of the B.Sc. in Computer Science and Engineering (CSE) program of [Shanto-Mariam University of Creative Technology](https://smuct.ac.bd/).
 
 ##
 
@@ -29,20 +29,24 @@ It is a Laravel 9 blade template based project reflecting full features of a sin
 
 ## Getting Started Step by Step
 
-1. In your root folder, clone the project file using git clone https://github.com/mokammeltanvir/ICT3204-Project-Ecommerce.git
-2. Open terminal (bash/cmd). Then go to project folder using command
+1. In your root folder, clone the project file using command
+   
+```sh
+   git clone https://github.com/mokammeltanvir/ICT3204-Project-Ecommerce.git
+```
+3. Open the terminal (bash/cmd). Then go to the project folder using the command
 
 ```sh
 cd ICT3204-Project-Ecommerce
 ```
 
-3. Then install required files and libraries using
+3. Then install the required files and libraries using
 
 ```sh
 composer install
 ```
 
-4. Then create a .env file and generate key for this project using command
+4. Then create a .env file and generate a key for this project using the command
 
 ```sh
 cp .env.example .env
@@ -62,8 +66,8 @@ or
 yarn install && yarn run dev
 ```
 
-6. Create a database in MYSQL and connect it with your project via updating .env file.
-7. After connecting the db with project, then run command
+6. Create a database in MYSQL and connect it with your project by updating .env file.
+7. After connecting the db with the project, run command
 
 ```sh
 php artisan migrate:fresh --seed
@@ -75,7 +79,7 @@ A. Admin -> Admin
 Email -> admin@superadmin.com
 Pass -> 12345678
 
-Finally we are ready to run our project using this command 😄
+Finally, we are ready to run our project using this command 😄
 
 ```sh
 php artisan serve
@@ -102,7 +106,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 -   [Robust background job processing](https://laravel.com/docs/queues).
 -   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel is accessible, and powerful, and provides tools required for large, robust applications.
 
 ## License
 
