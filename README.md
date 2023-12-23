@@ -32,12 +32,12 @@ It is a Laravel-9 blade template-based project reflecting the full features of a
 1. In your root folder, clone the project file using command
    
 ```sh
-git clone https://github.com/mokammeltanvir/ICT3204-Project-Ecommerce.git
+git clone https://github.com/mokammeltanvir/Codexwise-Ecommerce.git
 ```
 3. Open the terminal (bash/cmd). Then go to the project folder using the command
 
 ```sh
-cd ICT3204-Project-Ecommerce
+cd Codexwise-Ecommerce
 ```
 
 3. Then install the required files and libraries using
